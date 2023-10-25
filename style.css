@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/wedd333.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.Logo1 {
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.Navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    font-weight: 100;
+}
+
+.Navbar ul li ::after {
+    content: '';
+    height: .65px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: .3s;
+}
+
+.Navbar ul li :hover::after {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.title p {
+    margin: 20px auto;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    color: white;
+    
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background-color: white;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .7s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+    color: black;
+}
+
+/* test */
+.imagescrol {
+    
+    width: 100%;
+    height:250px;
+    /* background-color: black; */
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+
+.images-clss {
+    width: 100%;
+    object-fit: contain;
+    max-height: 250px;
+    margin-right: 0.95px;
+    /* padding: 2px; */
+    transition: transform 225ms;
+
+}
+
+.images-clss:hover {
+    transform: 1.08; 
+    opacity: 50%;
+}
+
+.images-clss::-webkit-scrollbar {
+    display: none;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 12vh;
+    color: white;
+    font-size: 10px;
+    font-style: normal;
+    background-color: rgb(13, 13, 13);
+    
+}
+
+.foot-places {
+    opacity: 20%;
+    width: 66%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer2 {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-2 {
+    width: 60px;
+    cursor: pointer;
+    opacity: 12%;
+}
+
+.logo-2:hover {
+    opacity: 35%;
+    
+}
+
+/* images-more */
+
+.images-more {
+    width: 100%;
+    height: 50px;
+    
+}
